@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #121212;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-container {
+  height: 400px;
+  width: 300px;
+  background: #181818;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+  /* Progress */
+  /* Controls */
+}
+
+.player-container .img-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -31px;
+  left: 50px;
+}
+
+.player-container .img-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.6);
+}
+
+.player-container h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+
+.player-container h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+  color: #b3b3b3;
+}
+
+.player-container .progress-container {
+  background: #535353;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.player-container .progress-container .progress {
+  background: #b3b3b3;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: width 0.1s linear;
+  transition: width 0.1s linear;
+}
+
+.player-container .progress-container .duration-wrapper {
+  position: relative;
+  top: -28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #b3b3b3;
+}
+
+.player-container .player-controls {
+  position: relative;
+  top: -15px;
+  left: 76px;
+  width: 200px;
+  z-index: 5;
+}
+
+.player-container .player-controls .fas {
+  font-size: 30px;
+  color: #b3b3b3;
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.player-container .player-controls .fas.fa-play {
+  color: #fff;
+}
+
+.player-container .player-controls .fas.fa-pause {
+  color: #fff;
+}
+
+.player-container .player-controls .fas:hover {
+  color: #fff;
+}
+
+.player-container .player-controls .fas .main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
